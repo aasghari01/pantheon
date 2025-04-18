@@ -1,6 +1,4 @@
-# pantheon
-A network performance benchmarking suite to evaluate congestion control algorithms under varied conditions.
-NetFlowEval
+Pantheon
 A network performance benchmarking suite to evaluate congestion control algorithms under varied conditions.
 
 Table of Contents
@@ -17,16 +15,17 @@ Data Analysis
 Contributing
 
 Overview
-NetFlowEval provides a framework for benchmarking and comparing various congestion control (CC) algorithms under different network conditions. This tool integrates with Pantheon and MahiMahi to simulate realistic network environments, allowing you to evaluate algorithms' performance in terms of throughput, latency, packet loss, and other key metrics.
+Pantheon provides a framework for benchmarking and comparing various congestion control (CC) algorithms under different network conditions. This tool integrates with Pantheon and MahiMahi to simulate realistic network environments, allowing you to evaluate algorithms' performance in terms of throughput, latency, packet loss, and other key metrics.
 
 With this suite, you can easily run experiments and analyze performance data to understand which CC algorithm performs best under different network scenarios.
 
 Installation
-To use NetFlowEval, follow these steps:
+To use Pantheon, follow these steps:
 
 Clone the Repository:
-git clone https://github.com/yourusername/NetFlowEval.git
-cd NetFlowEval
+
+git clone https://github.com/aasghari01/pantheon.git
+cd pantheon
 Dependencies:
 Pantheon: A community-driven platform that integrates multiple congestion control algorithms. Pantheon GitHub
 
@@ -45,7 +44,6 @@ Usage
 Running Experiments:
 To start an experiment comparing CC algorithms, run the provided scripts with your desired configurations. Here's an example of running a test between TCP Cubic and BBR:
 
-
 python run_experiment.py --algorithms cubic,bbr --duration 60 --scenario low_latency
 This command will:
 
@@ -57,7 +55,6 @@ Use the low-latency network scenario (50 Mbps, 10 ms RTT).
 
 Analyzing Results:
 After completing an experiment, you can analyze the results using the provided analysis scripts. For example:
-
 
 python analyze_results.py --data results/cubic_bbr_low_latency.csv
 This will generate performance graphs (throughput, RTT, and loss) and statistical comparisons.
