@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Assumes Pantheon is installed and PATH is set
-# Also assumes Mahimahi is installed
-# This script simulates running tests with different CC algorithms
-
 SCHEMES=("cubic" "bbr" "copa")
 PROFILES=("50mbps_10ms" "1mbps_200ms")
 DURATION=60
